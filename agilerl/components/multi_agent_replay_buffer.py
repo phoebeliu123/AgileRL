@@ -148,7 +148,7 @@ class MultiAgentReplayBuffer:
                     ts = ts.astype(np.uint8)
 
                 if not np_array:
-                    print(ts)
+                    # print(ts)
                     ts = obs_to_tensor(ts, self.device)
 
                 transition[field][agent_id] = ts
